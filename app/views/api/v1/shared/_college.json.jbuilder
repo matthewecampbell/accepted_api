@@ -1,0 +1,1 @@
+json.extract! college, :name, :total_price_in_state, :total_price_out_of_state, :percent_admitted, :yield, :total_applicants, :act_range, :city, :longitude, :latitude, :affiliation, :six_year_grad_rate, :total_enrollment, :updated_at, :created_at, :id
