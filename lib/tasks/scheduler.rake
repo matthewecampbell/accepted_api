@@ -1,14 +1,12 @@
 require 'csv'
 
-namespace :scheduler do
-  desc "Import customers from csv files"
-  task :import => [:environment] do
+desc "Import customers from csv files"
+task :import => [:environment] do
 
-    colleges     = "data/college_data.csv"
+  colleges     = "data/college_data.csv"
 
-    CSV.foreach(colleges, headers: true) do |row|
-      college = College.create!(row.to_hash)
-      puts "Created College #{college.id}"
-    end
+  CSV.foreach(colleges, headers: true) do |row|
+    college = College.create!(row.to_hash)
+    puts "Created College #{college.id}"
   end
 end
