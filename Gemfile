@@ -27,7 +27,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'figaro'
 gem 'pry'
 gem 'responders'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
