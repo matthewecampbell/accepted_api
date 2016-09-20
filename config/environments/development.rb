@@ -6,8 +6,8 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.debug_exception_response_format = :default
 
-  
-  config.cache_classes = false
+
+  config.cache_classes = true
 
   # Do not eager load code on boot.
   config.eager_load = false
@@ -24,7 +24,7 @@ Rails.application.configure do
       'Cache-Control' => 'public, max-age=172800'
     }
   else
-    config.action_controller.perform_caching = false
+    config.action_controller.perform_caching = true
 
     config.cache_store = :null_store
   end
