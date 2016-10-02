@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160919214239) do
+ActiveRecord::Schema.define(version: 20161002232233) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,23 @@ ActiveRecord::Schema.define(version: 20160919214239) do
     t.datetime "created_at"
     t.integer  "act_low"
     t.integer  "act_high"
+    t.string   "website"
+    t.string   "phone_number"
+    t.string   "financial_aid_address"
+    t.string   "admissions_address"
+    t.string   "application_address"
+    t.string   "net_price_calculator"
+    t.integer  "average_price_after_financial_aid"
+    t.integer  "average_price_if_less_than_30000"
+    t.integer  "average_price_if_less_than_48000"
+    t.integer  "average_price_if_less_than_75000"
+    t.integer  "average_price_if_less_than_110000"
+    t.integer  "average_price_if_greater_than_110000"
+    t.string   "ncaa_membership"
+    t.string   "football_team?"
+    t.string   "basketball_team?"
+    t.string   "baseball_team?"
+    t.string   "cross_country_team?"
   end
 
 end
