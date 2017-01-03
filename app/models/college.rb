@@ -1,4 +1,5 @@
 class College < ApplicationRecord
+  has_many :students, dependent: :destroy
 
   def self.recommended_colleges(act, in_state, out_of_state, affiliation, grad_rate, enrollment)
     where(act_high: (act-3)..(act+3))
